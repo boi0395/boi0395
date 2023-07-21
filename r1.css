@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #FFFFFF, rgb(117, 189, 200));/*linear gradient是给颜色浅去深的概念（to left or to right）*/
+}
+.box{
+    border: none;
+
+}
+.box-content{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: rgb(32, 126, 126);
+    justify-content: space-between;
+    /*jusitfy content is left right,align content is up and down*/
+    align-items: center;
+    padding: 60px;
+    /*order: 122331113;*/
+}
+li{
+    /*display got 3,block,inline,inline-block
+    if you write(ali,abu,lim)
+    block=[ali]       inline= [ali] [abu]      inline-block= [ali] [abu] [lim]
+          [abu]               [lim]         
+          [lim]
+    */
+    display: inline-block;
+    font-display: black;
+    font-style: oblique;
+    font-size: 16px;
+    background-color: rgb(237, 217, 191);
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-weight: bold;
+    margin-right: 100px;
+    /*when you write a text,if you put padding就是你的字的左右上下可以expand,
+    after expand become a box,outside the box is call margin在这个外面的box跟前面一样*/
+}
+/*float use to put the thing side by side,然后再加padding，margin*/
+.img{
+    float: left;
+}
+.text{
+    float: right;
+    
+}
